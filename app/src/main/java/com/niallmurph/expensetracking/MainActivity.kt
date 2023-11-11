@@ -1,5 +1,6 @@
 package com.niallmurph.expensetracking
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -8,6 +9,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.niallmurph.expensetracking.ui.theme.ExpenseTrackingTheme
@@ -34,10 +36,12 @@ fun Greeting(name: String) {
     Text(text = "Hello $name!")
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, uiMode = Configuration.UI_MODE_NIGHT_YES)
 @Composable
 fun DefaultPreview() {
     ExpenseTrackingTheme {
-        Greeting("Android")
+        Surface {
+            Greeting("Android")
+        }
     }
 }

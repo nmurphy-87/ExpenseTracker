@@ -7,15 +7,19 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = Primary,
+    primaryVariant = PrimaryVariant,
+    background = Surface,
+    surface = Surface,
+    onPrimary = OnPrimary,
+    onSecondary = OnSecondary,
+    onBackground = OnBackground,
+    onSurface = OnSurface,
 )
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = Primary,
+    primaryVariant = PrimaryVariant,
 
     /* Other default colors to override
     background = Color.White,
@@ -27,6 +31,8 @@ private val LightColorPalette = lightColors(
     */
 )
 
+
+// TODO : Potentially come back to if we want to lock the app into Dark / Light mode
 @Composable
 fun ExpenseTrackingTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

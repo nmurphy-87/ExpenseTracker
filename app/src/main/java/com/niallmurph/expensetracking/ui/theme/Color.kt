@@ -2,7 +2,13 @@ package com.niallmurph.expensetracking.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val Surface = Color.Black
+val PrimaryText = Color.White
+val BackgroundElevated = Color(0xFF1C1C1E)
+val Primary = Color(0xFF0A84FF)
+val PrimaryVariant = Color(0xFF5E5CE6)
+val OnPrimary = Color.White
+val OnSecondary = Color.White
+val OnBackground = Color.White
+val OnSurface = Color.White
+
