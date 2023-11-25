@@ -13,3 +13,7 @@ val OnSecondary = Color.White
 val OnBackground = Color.White
 val OnSurface = Color.White
 
+var SystemGray04 = Color(0xFF3A3A3C)
+var LabelSecondary = Color(0xFF8E8E93)
+val Divider = Color(0x20787880)
+

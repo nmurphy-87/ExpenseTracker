@@ -15,6 +15,8 @@ private val DarkColorPalette = darkColors(
     onSecondary = OnSecondary,
     onBackground = OnBackground,
     onSurface = OnSurface,
+    error = Destructive,
+    onError = OnPrimary
 )
 
 private val LightColorPalette = lightColors(
